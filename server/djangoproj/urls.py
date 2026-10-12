@@ -14,6 +14,11 @@ urlpatterns = [
         name='about',
     ),
     path(
+        'contact',
+        TemplateView.as_view(template_name='Contact.html'),
+        name='contact',
+    ),
+    path(
         '',
         TemplateView.as_view(template_name='Home.html'),
         name='home',
